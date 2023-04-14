@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <script defer src="runtime.js"></script>
+    <script defer src="main.js"></script>
+    <style>
+      body,
+      html {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <label class="formTitle">Form</label>
+      <label for="emailInput">Email:</label>
+      <input type="email" id="emailInput" required />
+      <label for="countryInput">Country:</label>
+      <select name="countries" id="countryInput" style="text-align: center">
+        <option disabled selected value>--select--</option>
+        <option value="England">England</option>
+        <option value="Korea">Korea</option>
+        <option value="Japan">Japan</option>
+      </select>
+      <label for="zipcodeInput">Zipcode: </label>
+      <input type="text" id="zipcodeInput" class="zipcodeInput" />
+      <button type="submit">send</button>
+      <div class="output" required></div>
+    </form>
+  </body>
+</html>
